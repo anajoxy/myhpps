@@ -1,0 +1,227 @@
+html { 
+  background:url("images/C.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+   background-size: cover;
+  
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p{
+font-family: 'Verdana', sans-serif;
+font-size: 12px;
+font-style: normal;
+padding: 5px 5px;
+}
+
+header {
+    /*text-shadow: 1px 7px 5px rgba(51,153,255);*/
+    color:black;
+    text-align:center;
+    padding:30px;
+	
+}
+#logo{
+    float: left;
+    display: inline-block;
+    vertical-align: bottom;
+    height: 70px; 
+    width: 75px; 
+} 
+
+.fixed-nav-bar {
+ line-height:30px;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 50px;
+  text-shadow: 2px 3px 2px rgba(0,0,0,0.4);
+ 
+}
+
+.nav ul {
+  -webkit-box-shadow: 0px 0px 6px 0px #000000;
+  -moz-box-shadow: 0px 0px 6px 0px #000000;
+  box-shadow: 0px 0px 6px 0px #000000;
+  list-style: none;
+  background-color: #80ccff;
+  text-align: center;
+  
+  padding: 0;
+  margin: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  display: block;
+  padding-left: 35px;
+  border-bottom: 1px solid #888;
+  transition: .3s background-color;
+}
+
+.nav a:hover {
+  background-color: #005f5f;
+}
+
+.nav a.active {
+  background-color: #aaa;
+  color: #444;
+  cursor: default;
+}
+
+/* Sub Menus */
+.nav li li {
+  font-size: .99em;
+  display: inline-block;
+  text-align: center;
+}
+
+@media screen and (min-width: 650px) {
+  .nav li {
+    width: 245px;
+    border-bottom: none;
+    height: 65px;
+    line-height: 65px;
+    font-size: 1.2em;
+    display: inline-block;
+	margin-right: 9px;
+  }
+
+  .nav a {
+    border-bottom: none;
+  }
+
+  .nav > ul > li {
+    text-align: center;
+  }
+
+  .nav > ul > li > a {
+    padding-left: 1;
+  }
+
+  /* Sub Menus */
+  .nav li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+	z-index:1;
+  }
+
+  .nav li:hover ul {
+    display: block;
+  }
+
+  .nav li ul li {
+    display: block;
+  }
+}
+
+#content {
+    text-align:justify;
+    position:auto;
+    width:30em;
+    height:100%;
+    overflow:auto;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    outline:none;
+    z-index:3;
+    margin-top:12em;
+
+}
+
+
+ .jumbotron{
+ background: #CCC;
+  filter: alpha(opacity=95);
+  /* IE */
+  -moz-opacity: 0.95;
+  /* Mozilla */
+  opacity: 0.95;
+  /* CSS3 */
+ z-index:4;
+border-top: 1px solid #888;
+ border-bottom: 2px solid #888;
+ border-left: 1px solid #888;
+ border-right: 1px solid #888;
+ transition: .9s background-color;
+ margin-top:70px;
+ margin-bottom:50px;
+ margin-left:70px;
+ margin-right:70px;
+ color:inherit;
+ background-color:#ffffff
+ }
+ .jumbotron p{
+ color: black;
+ line-height: 33px;
+ margin-bottom:15px;
+ font-size:21px;
+ font-weight:120;
+ 
+ }
+
+ @media screen and (min-width:768px){
+ .jumbotron{
+ padding:40px 0
+ }.container .jumbotron,.container-fluid .jumbotron{
+ padding-right:120px;
+ padding-left:120px
+ }.jumbotron .h1,.jumbotron h1{
+ font-size:63px
+ }
+ }
+ 
+
+.text_setup {
+
+text-indent: 60px;
+color: black;
+font-size: 16px;
+font-family: 'Playfair Display', serif;
+-webkit-hyphens: auto;
+-moz-hyphens: auto;
+-ms-hyphens: auto;
+hyphens: auto;
+ z-index:2;
+}
+
+footer
+{
+ background: #CCC;
+  filter: alpha(opacity=85);
+  /* IE */
+  -moz-opacity: 0.85;
+  /* Mozilla */
+  opacity: 0.85;
+  /* CSS3 */
+
+	padding: 1.2em 0;
+    background: #80ccff;
+    font-family: "Fjalla One", Verdana, Geneva, sans-serif;
+    font-size: 0.95em;
+    text-transform: uppercase;
+    text-align:center;
+    /* you probably need to add some extra styles here */
+}
+}
+.foote{
+
+ margin-bottom:50px;
+margin-left:50px;
+ margin-right:50px;
+ color:inherit;
+
+}
+.foote p{
+  text-align: center;
+  font-weight: bold;
+}
